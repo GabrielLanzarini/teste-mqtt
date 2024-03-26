@@ -1,0 +1,16 @@
+{
+  "name": "mqtt-node",
+  "version": "1.0.0",
+  "description": "mqtt-node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch ./app.js "
+  },
+  "keywords": [],
+  "author": "Gabriel Lanzarini",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^5.5.0",
+    "socket.io": "^4.7.5"
+  }
+}
