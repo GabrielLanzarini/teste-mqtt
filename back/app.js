@@ -1,12 +1,13 @@
 const mqtt = require("mqtt")
 const { Server } = require("socket.io");
 
-const client = mqtt.connect("mqtt://<seu_ip>", { password: "<senha>", username: "<usuário>" });
+const client = mqtt.connect("mqtt://18.231.122.111", { password: "cesul", username: "cesul" });
 
 const io = new Server({ cors: { origin: "http://localhost:5173" } })
 
 client.on("connect", () => {
-  client.subscribe("<Topico1>", "<Topico2>"); // Tópicos que você quer escutar
+  client.subscribe("barraca_pastel", "barraca_suco");
+  // Tópicos que você quer escutar
 });
 
 client.on("message", (topic, message) => {
