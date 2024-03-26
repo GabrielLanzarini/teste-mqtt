@@ -3,7 +3,7 @@ const { Server } = require("socket.io");
 
 const client = mqtt.connect("mqtt://18.231.122.111", { password: "cesul", username: "cesul" });
 
-const io = new Server({ cors: { origin: "http://localhost:5173" } })
+const io = new Server({ cors: { origin: "http://localhost:500000" } })
 
 client.on("connect", () => {
   client.subscribe("barraca_pastel", "barraca_suco");
