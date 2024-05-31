@@ -1,4 +1,6 @@
-## MQTT 
+## Repositório de Demonstração do MQTT com Conexão a um Broker na AWS EC2 
+Este repositório foi criado para demonstrar a configuração e utilização do protocolo MQTT (Message Queuing Telemetry Transport) conectando-se a um broker configurado em uma instância EC2 da Amazon Web Services (AWS).
+
 
 Dentro do terminal da EC2
 ```
